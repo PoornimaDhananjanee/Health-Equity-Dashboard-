@@ -63,7 +63,7 @@ The app opens automatically at `http://localhost:8501`
 
 ```
 .
-├── app.py                          # Main Streamlit dashboard
+├── Dashboard.py                    # Main Streamlit dashboard
 ├── requirements.txt                # Python dependencies
 ├── .gitignore                      # Files to exclude from Git
 ├── README.md                       # This file
