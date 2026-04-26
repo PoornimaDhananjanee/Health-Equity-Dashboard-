@@ -1,4 +1,4 @@
-# 🌍 Health, Nutrition & Population Dashboard
+# Health, Nutrition & Population Dashboard
 
 An interactive Streamlit dashboard exploring World Bank Health, Nutrition & Population Statistics disaggregated by Wealth Quintile (2012–2021).
 
