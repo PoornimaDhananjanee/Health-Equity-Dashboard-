@@ -1,4 +1,4 @@
-# Health Equity by Wealth Quintile — Interactive Dashboard
+# Health Equity by Wealth Quintile — Dashboard
 
 An interactive Streamlit dashboard exploring how wealth inequality shapes maternal and reproductive health outcomes across countries worldwide.
 
