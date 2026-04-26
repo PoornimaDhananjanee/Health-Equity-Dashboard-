@@ -107,7 +107,6 @@ QUINTILE_LABELS = {
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 st.sidebar.markdown("""
 <div style="text-align:center; padding: 20px 0 10px 0;">
-    <div style="font-size: 3.5rem; line-height:1;">🌍</div>
     <div style="font-size: 1.4rem; font-weight: 800; color: white; margin-top: 10px; line-height: 1.2;">
         Health Equity Explorer
     </div>
@@ -120,7 +119,7 @@ st.sidebar.markdown("---")
 
 page = st.sidebar.radio(
     "Navigate",
-    ["📊 Overview", "🔍 Country Deep-Dive", "🌐 Cross-Country Compare", "📈 Inequality Gap", "ℹ️ About"],
+    [" Overview", " Country Deep-Dive", " Cross-Country Compare", " Inequality Gap", "ℹ️ About"],
 )
 
 st.sidebar.markdown("---")
@@ -149,7 +148,7 @@ def filt(countries=None, indicator=None, year=None):
 # ──────────────────────────────────────────────────────────────────────────────
 # PAGE 1 – OVERVIEW
 # ──────────────────────────────────────────────────────────────────────────────
-if page == "📊 Overview":
+if page == " Overview":
     st.markdown("<h1 style='text-align:center; color:white;'>🌍 Global Health Equity by Wealth Quintile</h1>", unsafe_allow_html=True)
     st.markdown(
         "Health outcomes vary dramatically between the richest and poorest populations. "
