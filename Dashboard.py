@@ -9,7 +9,6 @@ from plotly.subplots import make_subplots
 st.set_page_config(
     page_title="Health Equity by Wealth Quintile",
     layout="wide",
-    initial_sidebar_state="expanded",
 )
 
 # ── Custom CSS ─────────────────────────────────────────────────────────────────
