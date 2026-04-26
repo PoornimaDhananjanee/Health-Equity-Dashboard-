@@ -7,10 +7,10 @@ An interactive Streamlit dashboard exploring how wealth inequality shapes matern
 Covers 27 countries, 4 health indicators broken down by 5 wealth quintiles (Q1=poorest → Q5=richest), 2012–2021.
 
 ## Features
-- 📊 **Overview** — KPI cards, grouped bar charts, inequality heatmap
-- 🔍 **Country Deep-Dive** — Trend lines and snapshots per country
-- 🌐 **Cross-Country Compare** — Country ranking + Q1 vs Q5 scatter
-- 📈 **Inequality Gap** — Q5−Q1 gap over time with data table
+-  **Overview** — KPI cards, grouped bar charts, inequality heatmap
+-  **Country Deep-Dive** — Trend lines and snapshots per country
+-  **Cross-Country Compare** — Country ranking + Q1 vs Q5 scatter
+-  **Inequality Gap** — Q5−Q1 gap over time with data table
 
 ## Running Locally
 
