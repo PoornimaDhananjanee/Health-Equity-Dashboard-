@@ -95,6 +95,21 @@ def inject_css():
 
 inject_css()
 
+components.html("""
+<script>
+const keepSidebarOpen = () => {
+    const sidebar = window.parent.document.querySelector('[data-testid="stSidebar"]');
+    const button = window.parent.document.querySelector('[data-testid="collapsedControl"]');
+
+    if (sidebar && sidebar.getAttribute("aria-expanded") === "false") {
+        button?.click();
+    }
+};
+
+// Run once + keep checking
+setInterval(keepSidebarOpen, 500);
+</script>
+""", height=0)
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 @st.cache_data
