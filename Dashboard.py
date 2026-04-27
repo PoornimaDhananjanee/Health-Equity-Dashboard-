@@ -167,9 +167,9 @@ with st.sidebar:
     </div>""", unsafe_allow_html=True)
 
     st.markdown('<div class="nav-group">Navigation</div>', unsafe_allow_html=True)
-    page = st.radio( ["🏠  Home","📊  Overview","🔍  Country Deep-Dive",
-                             "⚖️  Inequality","🗺️  Global Map","📋  Data Table"],
-                    label_visibility="collapsed")
+    page = st.radio("Navigation", ["🏠  Home","📊  Overview","🔍  Country Deep-Dive",
+                         "⚖️  Inequality","🗺️  Global Map","📋  Data Table"],
+                label_visibility="collapsed")
 
     st.markdown('<div class="nav-group" style="margin-top:14px;">Filters</div>', unsafe_allow_html=True)
     selected_indicator = st.selectbox("Indicator", all_indicators,
