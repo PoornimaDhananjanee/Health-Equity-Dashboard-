@@ -171,7 +171,7 @@ with st.sidebar:
                          "⚖️  Inequality","🗺️  Global Map","📋  Data Table"],
                 label_visibility="hidden")
 
-    st.markdown('<div class="nav-group" style="margin-top:14px;">Filters</div>', unsafe_allow_html=True)
+    st.markdown('<div class="nav-group" style="margin-top:14px;">Filters</div>', unsafe_allow_html=True,label_visibility="hidden")
     selected_indicator = st.selectbox("Indicator", all_indicators,
         index=all_indicators.index("Total fertility rate (TFR) (births per woman)")
         if "Total fertility rate (TFR) (births per woman)" in all_indicators else 0)
