@@ -21,45 +21,74 @@ def inject_css():
     <style>
     html, body, [class*="css"] { font-family: 'Public Sans', sans-serif !important; font-size: 0.875rem; color: #262626; }
     .stApp { background: #f8f9fa !important; }
-    [data-testid="stSidebar"] { background: #ffffff !important; border-right: 1px solid #e6ebf1 !important; }
+
+    /* Sidebar styling */
+    [data-testid="stSidebar"] { 
+        background: #ffffff !important; 
+        border-right: 1px solid #e6ebf1 !important; 
+    }
+
     .sidebar-logo { padding: 20px 20px 16px; border-bottom: 1px solid #e6ebf1; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
     .sidebar-logo-icon { width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, #2196f3, #1565c0); display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; font-weight: 700; }
     .sidebar-logo-text { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; }
+
     .nav-group { padding: 14px 20px 4px; font-size: 0.68rem; font-weight: 600; color: #8c8c8c; letter-spacing: 0.08em; text-transform: uppercase; }
+
     [data-testid="stSidebar"] .stRadio > div { gap: 0 !important; }
-    [data-testid="stSidebar"] .stRadio label { display: flex !important; align-items: center !important; padding: 9px 20px !important; border-radius: 0 !important; cursor: pointer !important; font-size: 0.875rem !important; font-weight: 400 !important; color: #596172 !important; border-right: 2px solid transparent !important; transition: all 0.15s ease !important; width: 100% !important; margin: 0 !important; }
-    [data-testid="stSidebar"] .stRadio label:hover { background: #e8f4fd !important; color: #2196f3 !important; }
-    [data-testid="stSidebar"] .stRadio label > div:first-child { display: none !important; }
-    [data-testid="stSidebar"] .stRadio label:has(input[type="radio"]:checked) { background: #e8f4fd !important; color: #2196f3 !important; font-weight: 600 !important; border-right: 2px solid #2196f3 !important; }
-    [data-testid="stSidebar"] .stRadio label p { color: inherit !important; font-size: inherit !important; font-weight: inherit !important; margin: 0 !important; }
-    [data-testid="stSidebar"] .stSelectbox label, [data-testid="stSidebar"] .stMultiSelect label, [data-testid="stSidebar"] .stSlider label { font-size: 0.72rem !important; font-weight: 600 !important; color: #8c8c8c !important; letter-spacing: 0.05em !important; text-transform: uppercase !important; }
+    [data-testid="stSidebar"] .stRadio label {
+        display: flex !important;
+        align-items: center !important;
+        padding: 9px 20px !important;
+        cursor: pointer !important;
+        font-size: 0.875rem !important;
+        color: #596172 !important;
+        border-right: 2px solid transparent !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    [data-testid="stSidebar"] .stRadio label:hover {
+        background: #e8f4fd !important;
+        color: #2196f3 !important;
+    }
+
+    [data-testid="stSidebar"] .stRadio label:has(input[type="radio"]:checked) {
+        background: #e8f4fd !important;
+        color: #2196f3 !important;
+        font-weight: 600 !important;
+        border-right: 2px solid #2196f3 !important;
+    }
+
+    /* Main layout */
     .main .block-container { padding: 24px 28px !important; max-width: 100% !important; }
-    .topbar { background: white; border-bottom: 1px solid #e6ebf1; padding: 12px 28px; margin: -24px -28px 20px; display: flex; align-items: center; justify-content: space-between; }
-    .topbar-title { font-size: 1rem; font-weight: 600; color: #1a1a2e; }
-    .kpi-card { background: #ffffff; border: 1px solid #e6ebf1; border-radius: 4px; padding: 20px; overflow: hidden; }
-    .kpi-label { font-size: 0.72rem; font-weight: 600; color: #8c8c8c; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
-    .kpi-value { font-size: 1.75rem; font-weight: 700; color: #1a1a2e; line-height: 1; margin-bottom: 6px; }
-    .kpi-badge { display: inline-flex; align-items: center; gap: 3px; padding: 2px 8px; border-radius: 3px; font-size: 0.72rem; font-weight: 600; }
-    .kpi-badge.primary { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
-    .kpi-badge.success { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
-    .kpi-badge.warning { background: #fff8e1; color: #e65100; border: 1px solid #ffecb3; }
-    .kpi-badge.error   { background: #ffebee; color: #b71c1c; border: 1px solid #ffcdd2; }
-    .kpi-sub { font-size: 0.75rem; color: #8c8c8c; margin-top: 6px; }
-    .kpi-sub b { color: #2196f3; }
-    .chart-card { background: #ffffff; border: 1px solid #e6ebf1; border-radius: 4px; overflow: hidden; margin-bottom: 0; }
-    .chart-card-header { padding: 14px 20px 12px; border-bottom: 1px solid #e6ebf1; display: flex; align-items: center; justify-content: space-between; }
-    .chart-card-title { font-size: 0.9375rem; font-weight: 600; color: #1a1a2e; margin: 0; }
-    .chart-card-subtitle { font-size: 0.75rem; color: #8c8c8c; margin: 2px 0 0 0; }
-    .report-list-item { padding: 11px 20px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; background: white; }
-    .report-list-item:last-child { border-bottom: none; }
-    .report-list-name { font-size: 0.85rem; color: #262626; }
-    .pill { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; }
-    .pill-blue  { background: #e3f2fd; color: #1565c0; }
-    .pill-green { background: #e8f5e9; color: #2e7d32; }
-    .pill-red   { background: #ffebee; color: #b71c1c; }
-    header[data-testid="stHeader"] { display: none; }
+
+    /* Hide header but KEEP layout working */
+    header[data-testid="stHeader"] { visibility: hidden; }
+
+    /* Hide menu/footer */
     #MainMenu, footer { visibility: hidden; }
-    .stDownloadButton button { background: #2196f3 !important; color: white !important; border: none !important; border-radius: 4px !important; font-weight: 500 !important; }
+
+    /* Buttons */
+    .stDownloadButton button {
+        background: #2196f3 !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 4px !important;
+        font-weight: 500 !important;
+    }
+
+    /* ── LOCK SIDEBAR OPEN ───────────────────────── */
+    [data-testid="stSidebar"] {
+        transform: none !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+
+    /* Remove collapse arrow completely */
+    [data-testid="collapsedControl"] {
+        display: none !important;
+    }
+
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
