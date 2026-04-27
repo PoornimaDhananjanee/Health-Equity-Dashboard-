@@ -22,7 +22,7 @@ def inject_css():
     html, body, [class*="css"] { font-family: 'Public Sans', sans-serif !important; font-size: 0.875rem; color: #262626; }
     .stApp { background: #f8f9fa !important; }
     [data-testid="stSidebar"] { background: #ffffff !important; border-right: 1px solid #e6ebf1 !important; }
-    .sidebar-logo { padding: 20px 20px 16px; border-bottom: 1px solid #e6ebf1; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+    .sidebar-logo { padding: 8px 20px 16px; border-bottom: 1px solid #e6ebf1; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
     .sidebar-logo-icon { width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, #2196f3, #1565c0); display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; font-weight: 700; }
     .sidebar-logo-text { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; }
     .nav-group { padding: 14px 20px 4px; font-size: 0.68rem; font-weight: 600; color: #8c8c8c; letter-spacing: 0.08em; text-transform: uppercase; }
