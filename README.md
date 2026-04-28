@@ -3,7 +3,7 @@
 An interactive Streamlit dashboard exploring World Bank Health, Nutrition & Population Statistics disaggregated by Wealth Quintile (2012–2021).
 
 ## 📊 Features
-
+- **Home** - Dataset, Goal and Key Global Health Themes
 - **Overview** — KPIs, quintile trends, Q1 vs Q5 bar chart, pie chart
 - **Country Deep-Dive** — Per-country trend lines + indicator heatmap
 - **Inequality Explorer** — Gap analysis, scatter plot, country ranking table
